@@ -6,6 +6,10 @@ return {
       racket_langserver = {},
       tsserver = {},
       pyright = {},
+      rust_analyzer = {},
+      elixirls = {},
+      ocamllsp = {},
+      svelte = {},
     },
   },
 }

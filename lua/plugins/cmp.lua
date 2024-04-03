@@ -14,8 +14,8 @@ return {
     dependencies = {
       "hrsh7th/cmp-emoji",
     },
-    ---@param opts cmp.ConfigSchema
 
+    ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
       local has_words_before = function()
         unpack = unpack or table.unpack
@@ -25,6 +25,15 @@ return {
 
       local luasnip = require("luasnip")
       local cmp = require("cmp")
+
+      opts.sources = {
+        -- Copilot Source
+        { name = "copilot", group_index = 2, keyword_length = 1 },
+        -- Other sources
+        { name = "nvim_lsp", group_index = 2, keyword_length = 1 },
+        { name = "path", group_index = 2 },
+        { name = "luasnip", group_index = 2 },
+      }
 
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
         ["<Tab>"] = cmp.mapping(function(fallback)
