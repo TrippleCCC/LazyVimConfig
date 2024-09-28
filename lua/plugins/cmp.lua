@@ -28,7 +28,7 @@ return {
 
       opts.sources = {
         -- Copilot Source
-        { name = "copilot", group_index = 2, keyword_length = 1 },
+        -- { name = "copilot", group_index = 2, keyword_length = 1 },
         -- Other sources
         { name = "nvim_lsp", group_index = 2, keyword_length = 1 },
         { name = "path", group_index = 2 },

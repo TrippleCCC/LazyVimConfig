@@ -23,6 +23,9 @@ return {
       "svelte",
       "pkl",
       "proto",
+      "gleam",
+      "jsonnet",
+      "cpp",
     },
   },
 }

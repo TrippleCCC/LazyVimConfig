@@ -26,10 +26,14 @@ end
 
 return {
   { "rebelot/kanagawa.nvim" },
+  { "nyoom-engineering/oxocarbon.nvim" },
+  { "aktersnurra/no-clown-fiesta.nvim" },
+  { "ramojus/mellifluous.nvim" },
+  { "killitar/obscure.nvim" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa-dragon",
+      colorscheme = "obscure",
     },
   },
 }
